@@ -63,7 +63,7 @@ public class ConnectionPool {
 		return con;
 	}
     /**
-     * return connection we dont need
+     * return connection we dont need anymore
      * 
      */
 	public synchronized void returnConnection(Connection con) {
