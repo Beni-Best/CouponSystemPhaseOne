@@ -7,39 +7,76 @@ public class Customer {
 	private String password;
 	
 	
-	
+	/**
+	 * empty CTOR
+	 */
 	public Customer() {
 		super();
 	}
+	
+	/**
+	 * CTOR with id
+	 */
 	public Customer(long id, String cust_name, String password) {
 		super();
 		this.id = id;
 		this.cust_name = cust_name;
 		this.password = password;
 	}
+	
+	/**
+	 * CTOR without id
+	 */
 	public Customer(String cust_name, String password) {
 		super();
 		this.cust_name = cust_name;
 		this.password = password;
 	}
+	
+	/**
+	 * get customer id
+	 * @return id
+	 */
 	public long getId() {
 		return id;
 	}
+	/**
+	 * set customer id
+	 * @param id
+	 */
 	public void setId(long id) {
 		this.id = id;
 	}
+	/**
+	 * get customer name
+	 * @return cust_name
+	 */
 	public String getName() {
 		return cust_name;
 	}
+	/**
+	 * set customer name
+	 * @param cust_name
+	 */
 	public void setName(String cust_name) {
 		this.cust_name = cust_name;
 	}
+	/**
+	 * get customer password
+	 * @return password
+	 */
 	public String getPassword() {
 		return password;
 	}
+	
+	/**
+	 * set customer password
+	 * @param password
+	 */
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	
 	@Override
 	public String toString() {
 		return "Customer [id=" + id + ", cust_name=" + cust_name + ", password=" + password + "]";

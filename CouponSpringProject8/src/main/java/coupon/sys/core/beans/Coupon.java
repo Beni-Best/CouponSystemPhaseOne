@@ -14,10 +14,16 @@ private double price;
 private String image;
 
 
-
+/**
+ * empty CTOR
+ */
 public Coupon() {
 	super();
 }
+
+/**
+ * CTOR with id
+ */
 public Coupon(long id, String title, Date start_Date, Date end_Date, int amount, CouponType type, String message,
 		double price, String image) {
 	super();
@@ -31,6 +37,9 @@ public Coupon(long id, String title, Date start_Date, Date end_Date, int amount,
 	this.price = price;
 	this.image = image;
 }
+/**
+ * CTOR without id
+ */
 public Coupon(String title, Date start_Date, Date end_Date, int amount, CouponType type, String message,
 		double price, String image) {
 	super();
@@ -43,57 +52,140 @@ public Coupon(String title, Date start_Date, Date end_Date, int amount, CouponTy
 	this.price = price;
 	this.image = image;
 }
+
+/**
+ * get coupon id
+ * @return id
+ */
 public long getId() {
 	return id;
 }
+/**
+ * set coupon id
+ * @param id
+ */
 public void setId(long id) {
 	this.id = id;
 }
+
+/**
+ * get coupon title
+ * @return title
+ */
 public String getTitle() {
 	return title;
 }
+
+/**
+ * set coupon title
+ * @param title
+ */
 public void setTitle(String title) {
 	this.title = title;
 }
+
+/**
+ * get coupon start date
+ * @return Start_Date
+ */
 public Date getStart_Date() {
 	return Start_Date;
 }
+
+/**
+ * set coupon start date
+ * @param start_Date
+ */
 public void setStart_Date(Date start_Date) {
 	Start_Date = start_Date;
 }
+
+/**
+ * get coupon end date
+ * @return End_Date
+ */
 public Date getEnd_Date() {
 	return End_Date;
 }
+/**
+ * set coupon end date
+ * @param end_Date
+ */
 public void setEnd_Date(Date end_Date) {
 	End_Date = end_Date;
 }
+/**
+ * get amount of coupon
+ * @return amount
+ */
 public int getAmount() {
 	return amount;
 }
+
+/**
+ * set amount of coupon
+ * @param amount
+ */
 public void setAmount(int amount) {
 	this.amount = amount;
 }
+
+/**
+ * get coupon type
+ * @return type
+ */
 public CouponType getType() {
 	return type;
 }
+/**
+ * set coupon type
+ * @param type
+ */
 public void setType(CouponType type) {
 	this.type = type;
 }
+/**
+ * get coupon message
+ * @return message
+ */
 public String getMessage() {
 	return message;
 }
+/**
+ * set coupon message
+ * @param message
+ */
 public void setMessage(String message) {
 	this.message = message;
 }
+
+/**
+ * get coupon price
+ * @return price
+ */
 public double getPrice() {
 	return price;
 }
+/**
+ * set coupon price
+ * @param price
+ */
 public void setPrice(double price) {
 	this.price = price;
 }
+
+/**
+ * get coupon image
+ * @return image
+ */
 public String getImage() {
 	return image;
 }
+
+/**
+ * set coupon image
+ * @param image
+ */
 public void setImage(String image) {
 	this.image = image;
 }

@@ -7,10 +7,16 @@ public class Company {
 	private String password;
 	private String email;
 
+	/**
+	 * Empty CTOR
+	 */
 	public Company() {
 		
 	}
 	
+	/**
+	 * CTOR , without id
+	 */
 	public Company(String comp_name, String password, String email) {
 		super();
 		this.comp_name = comp_name;
@@ -18,6 +24,9 @@ public class Company {
 		this.email = email;
 	}
 	
+	/**
+	 * CTOR , with id
+	 */
 	public Company(long id, String comp_name, String password, String email) {
 		super();
 		this.id = id;
@@ -26,34 +35,66 @@ public class Company {
 		this.email = email;
 	}
 
+	/**
+	 * get company id
+	 * @return id
+	 */
 	public long getId() {
 		return id;
 	}
 
+	/**
+	 *  Set company id
+	 * @param id
+	 */
 	public void setId(long id) {
 		this.id = id;
 	}
 
+	/**
+	 * get name of company
+	 * @return comp_name
+	 */
 	public String getName() {
 		return comp_name;
 	}
 
+	/**
+	 * set company name 
+	 * @param name
+	 */
 	public void setName(String name) {
 		this.comp_name = name;
 	}
 
+	/**
+	 * get company password
+	 * @return password
+	 */
 	public String getPassword() {
 		return password;
 	}
 
+	/**
+	 * set company password
+	 * @param password
+	 */
 	public void setPassword(String password) {
 		this.password = password;
 	}
 
+	/**
+	 * get company email
+	 * @return email
+	 */
 	public String getEmail() {
 		return email;
 	}
 
+	/**
+	 * Set company email
+	 * @param email
+	 */
 	public void setEmail(String email) {
 		this.email = email;
 	}
